@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>STATS CARTPROD Extension Command</title>
+
+<link rel="stylesheet" type="text/css" href="extsyntax.css" />
+
+
+
+
+
+</head>
+
+<body>
+<h1>STATS CARTPROD Extension Command</h1>
+
+<p>Compute the cartesian product of two sets of variables and produces a new data file containing the result.</p>
+<div class="syntax">
+<p>STATS CARTPROD INPUT2=<em>dataset</em><br/>
+VAR1=<em>variables</em><sup>&#42;</sup> VAR2=<em>variables</em><sup>&#42;</sup>  </p>
+
+<p>/SAVE 
+OUTFILE=&ldquo;<em>file</em>&rdquo;<sup>&#42;</sup><br/>
+DSNAME=<em>dataset</em></p>
+
+<p>/HELP</p>
+</div>
+<p>STATS CARTPROD /HELP displays this help and does nothing else.</p>
+
+
+<pre class="example"><code>STATS INPUT2=right
+    VAR1=x1 x2 VAR2=y1 y2
+/SAVE OUTFILE=cartprod.sav DSNAME=cart.
+</code></pre>
+
+<p>The active file must have a dataset name in order to run this command.</p>
+
+<p><strong>VAR1</strong> and <strong>VAR2</strong> specify the variable(s) whose cartesian product is  computed.
+The two lists cannot have any names in common.</p>
+
+<p>The active dataset is the left term in the cartesian product.</p>
+
+<p><strong>INPUT2</strong> specifies the dataset containing the right hand variables to be used.
+If INPUT2 is omitted, all variables are taken from the active dataset.</p>
+
+<h2>SAVE</h2>
+
+<p><strong>OUTFILE</strong> specifies a file name for the output.  It cannot be a dataset name.
+The output file cannot be the active file.  It will be open after the
+command completes.</p>
+
+<p><strong>DSNAME</strong> specifies a dataset name for the output data file.  If no name is
+specified, a random name will be assigned.</p>
+
+<p>&copy; Copyright IBM Corp. 1989, 2014</p>
+
+</body>
+
+</html>
+
