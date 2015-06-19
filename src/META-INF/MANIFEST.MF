@@ -1,0 +1,16 @@
+Name: STATS CARTPROD
+Dialog-Specs: STATS_CARTPROD.spd
+Command-Specs: STATS_CARTPROD.xml
+Code-Files: STATS_CARTPROD.py
+Misc-Files: extsyntax.css,markdown.html,IBMdialogicon.png
+Summary: Compute the Cartesian product of two sets of variables
+Description: This command takes two sets of variables either from the 
+ active dataset or the active dataset plus one other dataset and creat
+ es a new data file containing the Cartesian product of the variables.
+Author: JKP, IBM SPSS
+Version: 1.0.6
+Product-Version: 18
+Date: 3/4/2014
+Categories: SPSS, datamanagement, Cartesian
+Plugins: Python
+Translation-Catalogues: lang
