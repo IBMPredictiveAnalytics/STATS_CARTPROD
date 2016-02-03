@@ -1,11 +1,11 @@
 # STATS CARTPROD
 ## Compute the Cartesian product of two sets of variables
- This command takes two sets of variables either from the 
+ This command takes two sets of variables either from the active dataset or the active dataset plus one other dataset and creates a new data file containing the Cartesian product of the variables.
 
 ---
 Requirements
 ----
-- IBM SPSS Statistics 18 or later
+- IBM SPSS Statistics 18 or later and the corresponding IBM SPSS Statistics-Integration Plug-in for Python.
 
 ---
 Installation intructions
