@@ -1,4 +1,5 @@
 Name: STATS CARTPROD
+Display-Name: Cartesian Product
 Dialog-Specs: STATS_CARTPROD.spd
 Command-Specs: STATS_CARTPROD.xml
 Code-Files: STATS_CARTPROD.py
